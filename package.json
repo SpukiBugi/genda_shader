@@ -1,14 +1,39 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "widget-sova",
+  "version": "1.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/widget-sova.js",
+  "exports": {
+    ".": {
+      "import": "./dist/widget-sova.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "vue": "2.7.0"
   },
   "devDependencies": {
-    "vite": "^4.2.0"
+    "@vitejs/plugin-vue2": "2.2.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^7.14.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^7.1.0",
+    "sass": "^1.59.3",
+    "stylelint": "^13.2.0",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.14.2",
+    "vite": "^4.1.0",
+    "push-dir": "^0.4.1"
   }
 }
