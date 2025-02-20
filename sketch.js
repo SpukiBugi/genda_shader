@@ -1,5 +1,5 @@
-import vertexShader from '@/assets/shaders/vertex';
-import fragmentShader from '@/assets/shaders/fragment';
+import vertexShader from '@/assets/shaders/vertex_grok_1';
+import fragmentShader from '@/assets/shaders/fragment_grok_1';
 
 const s = p => {
     let img;
